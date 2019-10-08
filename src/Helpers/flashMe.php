@@ -14,7 +14,7 @@ if (! function_exists('flashMe_flash')) {
 		$flash .= 'iziToast.'.flashMe()->type().'({';
                $flash .= 'title: "' . flashMe()->title() . '",';
                $flash .= 'message: "' . flashMe()->message() . '",';
-               if (sizeof(flashMe()->options()) > 0) {
+               if (is_array(flashMe()->options()) && sizeof(flashMe()->options()) > 0) {
                	foreach (flashMe()->options() as $key => $option) {
                		$flash .= $key . ': "' . $option . '",';
                	}
