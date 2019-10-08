@@ -1,5 +1,5 @@
 {
-    "name": "rdj/flash-me",
+    "name": "rdj/flash-me-php-7-1-3",
     "description": "Simple flash alert for Laravel",
     "type": "library",
     "license": "MIT",
